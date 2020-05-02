@@ -1,3 +1,13 @@
+body {
+    background-color:black;
+}
+
+.content {
+    background-image:url("../img/darked1.jpg");
+    background-size:cover;
+}
+
+
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
@@ -40,14 +50,13 @@
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
     color: white;
-    padding: 10px 15px;
     border: none;
+    background-color:transparent;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    color: #444;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -62,4 +71,3 @@
     .sidebar a {font-size: 18px;}
   }
 
-  
