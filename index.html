@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     </head>
 
     <!-- Sidebar script-->
@@ -9,28 +10,37 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("overlay").style.display ="block";
     }
     
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("overlay").style.display ="none";
     }
+
+    /* overlay */
+    
     </script>
 
     <body>
     <!-- Sidebar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#"><h2>Login</h2></a>
+        <a href="#"><h2>Register</h2></a>
+        <a href="#"><h2>Business</h2></a>
+        <a href="#"><h2>Contact</h2></a>
     </div>
       
     <div class="content" id="main">
+        <div id="overlay" onclick="closeNav()"></div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div><h1>MasterMenu</h1></div>
+        <div><h1 style="color:white;">MasterMenu</h1></div>
+        <div>
+            <form> </form>
+        </div>
         
       </div>
         
