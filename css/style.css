@@ -1,6 +1,7 @@
 html, body {
     margin:0;
     background-color:black;
+    height:auto;
 }
 
 h1 {
@@ -18,8 +19,8 @@ h2 {
     box-shadow:inset 0 0 10px #000000;
     background-image:url("../img/darked1.jpg");
     background-size:cover;
+    height:auto;
     height:100%;
-    max-width:100%;
     top:0;
     bottom:0;
 }
