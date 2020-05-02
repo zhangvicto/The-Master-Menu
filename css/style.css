@@ -25,6 +25,12 @@ h2 {
     bottom:0;
 }
 
+.container1 {
+  position:absolute;
+  margin:0;
+  top:50%;
+}
+
 /* for the overlay on content when menu is activated */
 #overlay {
     position: static;
