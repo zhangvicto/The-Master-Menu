@@ -65,6 +65,7 @@ h2 {
   width: 30%;
   text-align: center;
   transition: 0.5s;
+  height:50px;
 }
 
 #mapSettings a {
