@@ -26,8 +26,7 @@ function geocode() {
                 document.getElementById('map'), { zoom: 14, center: addressLocation });
             // The marker, positioned at address location
             var marker = new google.maps.Marker({ position: addressLocation, map: map });
-        }
-        )
+        })
 };
 
 
