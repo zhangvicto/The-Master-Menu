@@ -35,7 +35,7 @@ function geocode() {
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Pizza Pizza</h1>'+
             '<div id="bodyContent">'+
-            '<p><b>Pizza Pizza</b> is a franchised Canadian pizza quick-service restaurant with its headquarters in Toronto, Ontario.[1] Its restaurants are mainly in the province of Ontario while others are located in Quebec, Nova Scotia, and western Canada. Franchises in western Canada are mostly run through Alberta-based subsidiary Pizza 73. It has over 500 locations, including over 150 non-traditional locations.'+
+            '<p><b>Harveys</b> is a franchised Canadian pizza quick-service restaurant with its headquarters in Toronto, Ontario.[1] Its restaurants are mainly in the province of Ontario while others are located in Quebec, Nova Scotia, and western Canada. Franchises in western Canada are mostly run through Alberta-based subsidiary Pizza 73. It has over 500 locations, including over 150 non-traditional locations.'+
             '<a href="menu.html">'+
             ' =>Order Now!</a> '+
             '</div>';
@@ -64,7 +64,7 @@ function geocode() {
                     url: "../img/mcd.png"
                 }});
             var restaurant2 = new google.maps.Marker({position:{lat:43.667990,lng:-79.369960},map:map,icon:{
-                url: "../img/pizza.png"
+                url: "../img/harveys.png"
             }});
             restaurant2.addListener('click', function() {
                 pizzainfo.open(map, restaurant2);
