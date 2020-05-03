@@ -18,9 +18,48 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
     }
+
+    function saladButton() {
+        window.sum = 0;
+        window.sum += 1.99; 
+
+        document.getElementById("row11").style.visibility = 'visible';
+        document.getElementById("row21").style.visibility = 'visible';
+        document.getElementById("row31").style.visibility = 'visible';
+
+        document.getElementById("total").innerHTML = "Total: $" + window.sum.toString();
+        document.getElementById("tax").innerHTML = "Tax: $" + (window.sum*0.13).toString();
+        document.getElementById("tat").innerHTML = "Total After Tax: $" + (window.sum*1.13).toString();
+    }
+
+    function friesButton() {
+        window.sum += 2.49; 
+
+        document.getElementById("row12").style.visibility = 'visible';
+        document.getElementById("row22").style.visibility = 'visible';
+        document.getElementById("row32").style.visibility = 'visible';
+
+        document.getElementById("total").innerHTML = "Total: $" + window.sum.toString();
+        document.getElementById("tax").innerHTML = "Tax: $" + (window.sum*0.13).toString();
+        document.getElementById("tat").innerHTML = "Total After Tax: $" + (window.sum*1.13).toString();
+    }
+
+    function chickenButton() {
+        window.sum += 2.99; 
+
+        document.getElementById("row13").style.visibility = 'visible';
+        document.getElementById("row23").style.visibility = 'visible';
+        document.getElementById("row33").style.visibility = 'visible';
+
+        document.getElementById("total").innerHTML = "Total: $" + window.sum.toString();
+        document.getElementById("tax").innerHTML = "Tax: $" + (window.sum*0.13).toString();
+        document.getElementById("tat").innerHTML = "Total After Tax: $" + (window.sum*1.13).toString();
+    }
+
+    
     </script>
 
-    <body text = "white" style = "overflow:scroll">
+    <body text = "white">
     <!-- Sidebar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -31,7 +70,7 @@
     </div>
       
     <div class="header" id="main" >
-        <div style="width:100%;overflow:sroll;"> 
+        <div style="width:100%;overflow:auto;"> 
             
             <button class="openbtn" onclick="openNav()">&#9776;</button>
             <a href="index.html"><img src="./img/logo.png" width="200px" height="auto" align ="right" style="padding:20px"></a>
@@ -43,7 +82,7 @@
     
     <div id="container"> 
 
-        <div style = "position: relative; width: 35%;" id = "leftside"> 
+        <div style = "position: relative;width: 35%;" id = "leftside"> 
             <div id = "custom">
                 <h1 style = "width:100%;"> Customization </h1>
                 <div> 
@@ -79,26 +118,26 @@
                 </div>
 
                 <div class="Row">  
-                    <div class="Col"> <h3 > 1 </h3> </div>
-                    <div class="Col"> <h3 > Side Salad</h3> </div>
-                    <div class="Col"> <h3 > $1.99 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row11"> <h3 > 1 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row21"> <h3 > Side Salad</h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row31"> <h3 > $1.99 </h3> </div>
                 </div>
 
                 <div class="Row">  
-                    <div class="Col"> <h3 > 1 </h3> </div>
-                    <div class="Col"> <h3 > Regular Fries </h3> </div>
-                    <div class="Col"> <h3 > $2.49 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row12"> <h3 > 1 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row22"> <h3 > Regular Fries </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row32"> <h3 > $2.49 </h3> </div>
                 </div>
 
                 <div class="Row">  
-                    <div class="Col"> <h3 > 2 </h3> </div>
-                    <div class="Col"> <h3 > Chicken Burger </h3> </div>
-                    <div class="Col"> <h3 > $2.99 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row13"> <h3 > 1 </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row23"> <h3 > Chicken Burger </h3> </div>
+                    <div class="Col" style = "visibility:hidden;" id="row33"> <h3 > $2.99 </h3> </div>
                 </div>
 
-                <h3> Total: $11.46</h3>
-                <h3> Tax: $1.49 </h3>
-                <h3> Total After Tax: $12.95 </h3>
+                <h3 id ="total"> Total: $0</h3>
+                <h3 id = "tax"> Tax: $0 </h3>
+                <h3 id = "tat"> Total After Tax: $0 </h3>
                 <div style = "text-align: center;">
                     <button id="checkout"> Checkout</button>
                 </div> 
@@ -106,7 +145,7 @@
 
         </div>
 
-        <div id="rightside" style= "position: relative; width:58.25%;">
+        <div id="rightside" style= "position: relative;width:58.25%;">
 
             <div id="salad" class="menu">
                 <div style = "float:left;"> 
@@ -120,7 +159,7 @@
                     <h3> Side Salad</h3>
                     <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
                     <p> Price: $1.99</p> 
-                    <button> Add to Cart </button>
+                    <button onClick = "saladButton()"> Add to Cart </button>
                 </div>
 
             </div>
@@ -136,7 +175,7 @@
                     <p> It's a burger that cooks and tastes like traditional beef, but is 
                         made from plants. So tasty, you need to try it to believe it. </p>
                     <p> Price: $3.99</p> 
-                    <button> Add to Cart </button>
+                    <button onClick = "friesButton()"> Add to Cart </button>
                 </div>
             </div>
             <div id="wrap" class="menu">
@@ -150,7 +189,7 @@
                     <p>With a flame-grilled 100% Canadian Chicken breast, topped the way you want it, 
                         Harvey's Grilled Chicken Wrap is great for lunch or dinner.</p>
                         <p> Price: $3.49</p> 
-                        <button> Add to Cart </button>
+                        <button onClick = "chickenButton()"> Add to Cart </button>
                 </div>
 
             </div>
@@ -164,7 +203,7 @@
                     <h3> Regular Fries </h3>
                     <p> Harvey's crispy fries made with 100% Canadian Potatoes </p>
                     <p> Price: $2.49</p> 
-                    <button> Add to Cart </button>
+                    <button > Add to Cart </button>
                 </div>
             </div>
             <div id="chickenStrips" class="menu">
@@ -203,7 +242,7 @@
                     <p>The fresh bun may be lightly toasted, but the Crispy Chicken's ruffled 
                         coating will give you a tasty bite you can hear! Made with 100% Canadian Chicken.</p>
                         <p> Price: $1.99</p> 
-                        <button> Add to Cart </button>
+                        <button > Add to Cart </button>
                 </div>
             </div>
         </div>

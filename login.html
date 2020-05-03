@@ -25,10 +25,21 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
     }
+
+    function check() {
+      let username = document.getElementById("usrnm").value;
+      let password = document.getElementById("psw").value;
+      console.log(username === "Harveys" && password === "TOHacks");
+    }
+
+    function test() {
+      console.log(document.getElementById("main").innerHTML);
+
+    }
     </script>
   
   
-    <body>
+    <body style = "background-image: url(./img/login.jpg);">
     <!-- Sidebar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -45,20 +56,20 @@
     </div>
     
     <!-- Login -->
-    <form action="/action_page.php">
-      <h2>Register Form</h2>
-      <div class="input-container">
-        <i class="fa fa-user icon"></i>
-        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+
+      <div style ="text-align: center;"> 
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" id="usrnm">
+        </div>
+      
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" id="psw">
+        </div>
+      
+        <button type="submit" onClick ="check()" class="btn">Log in</button>
       </div>
-    
-      <div class="input-container">
-        <i class="fa fa-key icon"></i>
-        <input class="input-field" type="password" placeholder="Password" name="psw">
-      </div>
-    
-      <button type="submit" class="btn">Log in</button>
-    </form>
 
     </body>
 </html>
