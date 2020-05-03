@@ -47,36 +47,64 @@
         </a>
     </div>
     <div class="maps" id="main">
-        <div style="width:100%;overflow:auto;"> 
+        <div style="width:100%;overflow:auto;">
             <button class="openbtn1" onclick="openNav()">&#9776;</button>
-            <a href="index.html"><img src="./img/logo1.png" width="200px" height="auto" align="right" style="padding:20px"></a>
-            </div>
+            <a href="index.html"><img src="./img/logo1.png" width="200px" height="auto" align="right"
+                    style="padding:20px"></a>
+        </div>
+
+
+        <!-- get and parse input from user-->
+        <script>
+            // const urlParams = new URLSearchParams(window.location.search);
+            // const myParam = urlParams.get('myParam'); //myParam is the parameter we need
+
+            // console.log(myParam);
+
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split('=');
+                    if (decodeURIComponent(pair[0]) == variable) {
+                        return decodeURIComponent(pair[1]);
+                    }
+                }
+                console.log('Query variable %s not found', variable);
+            }
+            var str = getQueryVariable('userAddress');
+            var replaced = str.split('+').join(' ');
+            console.log(replaced);
+
+        </script>
+
         <!-- api key: AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ-->
 
         <!-- google maps -->
         <div id="map"></div>
 
         <!-- map settings-->
-        <div id="settings" class="mapSettings">
-            Preferences!
+        <div id="settings" class="mapSettings" style="font-family:'Open Sans',sans-serif">
+            <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
+
             <!-- adjust distance from location input -->
-            <p>Distance</p>
-            <div class="slidecontainer" style="width:20%">
-                <input type="range" min="2" max="60" value="50" class="slider" id="myRange">
-                <span id="distance"></span>
+            <div>
+                <p>Distance</p>
+                <div class="slidecontainer" style="width:20%">
+                    <input type="range" min="2" max="60" value="50" class="slider" id="myRange">
+                    <span id="distance"></span>km
+                </div>
             </div>
 
             <script>
                 var slider = document.getElementById("myRange");
                 var output = document.getElementById("distance");
                 output.innerHTML = slider.value;
-                
-                slider.oninput = function() {
-                  output.innerHTML = this.value;
+
+                slider.oninput = function () {
+                    output.innerHTML = this.value;
                 }
-                </script>
-
-
+            </script>
         </div>
 
     </div>

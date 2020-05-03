@@ -60,8 +60,12 @@
             <!-- google places autocomplete -->
 
             <div id="locationField">
-                <input class="inputbox" id="autocomplete" style="font:30px;" placeholder="Enter your address" onFocus="geolocate()"
+                <form action="map.html" method="GET">
+                    <input class="inputbox" id="autocomplete" name="userAddress" placeholder="Enter your address" onFocus="geolocate()"
                     type="text" />
+                    <button type="submit" value="Submit" style="padding-top:100px">Let's go!</button>
+                </form>
+                
 
             </div>
         </div>

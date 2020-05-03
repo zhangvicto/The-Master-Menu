@@ -4,12 +4,6 @@ html, body {
     height:auto;
 }
 
-logo {
-  float:inline-end;
-  top: 50%;
-  display:inline-block;
-}
-
 h1 {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
@@ -44,18 +38,19 @@ h2 {
 
 .maps {
   background-color: white;
-  height:80%;
+  height:70%;
   width:80%;
-  font:white;
+  width: 100%;
 }
 
 .mapSettings {
   position:absolute;
   bottom: 0;
-  height:20%;
-  background-color: black;
-  font:white;
+  height:21%;
+  background-color: white;
+  color:black;
   width:100%;
+  padding:20px;
 }
 
 /* The sidebar menu */
@@ -66,7 +61,10 @@ h2 {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color:black;
+    -webkit-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.36);
+    box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.36);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
