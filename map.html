@@ -90,26 +90,26 @@
         <script>
             /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
             function openSet() {
-                document.getElementById("settings").style.height = "45%";
-                document.getElementById("map").style.height = "60%";
+                document.getElementById("mapSettings").style.height = "200px";
+                document.getElementById("map").style.height = "500px";
             }
         
             /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
             function closeSet() {
-                document.getElementById("settings").style.height = "20px";
-                document.getElementById("map").style.height = "100%";
+                document.getElementById("mapSettings").style.height = "60px";
+                document.getElementById("map").style.height = "80%";
             }
         </script>
 
-        <div id="settings" class="mapSettings" style="font-family:'Open Sans',sans-serif">
-            <button onclick="openSet()" class="openbtn1">
-                <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
+        <div id="mapSettings" style="font-family:'Open Sans',sans-serif;">
+            <button onclick="openSet()" class="openbtn1" style="padding-top: 0;">
+                <h2 style=margin:0;font-family:'Quicksand', sans-serif;;">Preferences</h2>
             </button>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeSet()">&times;</a>
                 
             </button>
 
-            <div class="blockContainer">
+            <div class="blockContainer" id="hide">
                 <!-- distance -->
                 <div class="settingBlock">
                     <p>Distance</p>
@@ -122,7 +122,7 @@
                             <p>Moderate</p>
                         </button>
 
-                        <button class="distanceButton" type="button"><img src="./img/car.png" height="20px">
+                        <button class="distanceButton" type="button"><img src="./img/car.png" height="30px">
                             <p>Farthest</p>
                         </button>
                     </form>
