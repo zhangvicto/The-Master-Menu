@@ -5,7 +5,9 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/LoginStyle.css">
     <link rel="stylesheet" href="./css/placesapi.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@700&display=swap"
         rel="stylesheet">
   </head>
@@ -36,10 +38,27 @@
         <a href="./contacts.html"><h2>Contacts</h2></a>
     </div>
     <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
-
+      <div style="width:100%;overflow:auto;"> 
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <a href="index.html"><img src="./img/logo.png" width="200px" height="auto" align="right" style="padding:20px"></a>
+      </div>
     </div>
     
+    <!-- Login -->
+    <form action="/action_page.php">
+      <h2>Register Form</h2>
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+      </div>
+    
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Password" name="psw">
+      </div>
+    
+      <button type="submit" class="btn">Log in</button>
+    </form>
 
     </body>
 

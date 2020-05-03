@@ -1,6 +1,21 @@
-/*Bugs: 
-- The vegetarian, gevan, etc symbols aren't showing up
-- How to float the right and left side to be in line 
+/*Bugs / Things to do : 
+- The vegetarian, vegan, etc symbols aren't showing up
+- Need to change the header (Also Movement)
+- Need to make the list (images aspect ratio, icons, alignment)
+- Fix the Shopping cart and make it scrollable
+- Need to make it adjustable to different screen sizes 
+- Need to make add to cart functionality 
+- Need to make checkout button that takes to payment page
+
+Payment Page
+- Need to make time slot
+- Need to make input for credit card information 
+
+Business Page
+- Login can be copied from internet
+- Something that keeps track of the orders and lists them real time
+- Allow the business owners to limit the number of people that can pre-order at a certain time
+
 
 */
 
@@ -31,8 +46,7 @@ p {
 #leftside {
     background-color: grey;
     float: left;
-    padding-right: 100px;
-    padding-left: 50px;
+    padding: 3.37%;
     height: 100%;
 }
 
@@ -55,15 +69,46 @@ p {
     background-color: grey;
 }
 
+.menu {
+    clear: left;
+}
+
 #refresh {
-    size: 100px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 20px;
-    margin-left: 135px;
+    /*Couldn't size adjust this*/
+    margin: 5% 0;
+    padding: 2%;
+    width: 20%; 
+    
 
 }
+
+#checkout {
+    /*Couldn't size adjust this*/
+    margin: 5% 0;
+    padding: 2%;
+    width: 20%; 
+    text-align: center;  
+
+}
+
+    
+
+.Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 1px;
+
+}
+
+.Col {
+    display: table-cell;
+    align-self: center;
+    text-align: center;
+
+}
+
+
 
 
 #salad {
