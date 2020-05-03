@@ -86,23 +86,43 @@
         <div id="map"></div>
 
         <!-- map settings-->
+        
+        <script>
+            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+            function openSet() {
+                document.getElementById("settings").style.height = "45%";
+                //document.getElementById("main").style.marginBottom = "200px";
+            }
+        
+            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+            function closeSet() {
+                document.getElementById("settings").style.height = "20px";
+                document.getElementById("maps").style.height = "90%";
+            }
+        </script>
+
         <div id="settings" class="mapSettings" style="font-family:'Open Sans',sans-serif">
-            <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
+            <button onclick="openSet()">
+                <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
+            </button>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">&times;</a>
+                
+            </button>
 
             <div class="blockContainer">
                 <!-- distance -->
                 <div class="settingBlock">
                     <p>Distance</p>
                     <form>
-                        <button type="button"><img src="./img/walk.png" height="20px">
+                        <button class="distanceButton" type="button"><img src="./img/walk.png" height="20px">
                             <p>Closest</p>
                         </button>
 
-                        <button type="button"><img src="./img/bus.png" height="20px">
+                        <button class="distanceButton" type="button"><img src="./img/bus.png" height="20px">
                             <p>Moderate</p>
                         </button>
 
-                        <button type="button"><img src="./img/car.png" height="20px">
+                        <button class="distanceButton" type="button"><img src="./img/car.png" height="20px">
                             <p>Farthest</p>
                         </button>
                     </form>
@@ -122,7 +142,6 @@
                         <button class="starButton" type="button"><img src="./img/star.png" height="20px">
                             1
                         </button>
-
                         <button class="starButton" type="button"><img src="./img/star.png" height="20px">
                             2
                         </button>
@@ -139,8 +158,6 @@
                 </div>
 
             </div>
-
-
 
             <script>
                 var slider = document.getElementById("myRange");

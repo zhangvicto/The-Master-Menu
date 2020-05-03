@@ -46,7 +46,7 @@ h2 {
 .mapSettings {
   position:fixed;
   bottom: 0;
-  height:21%;
+  height:45%;
   background-color: white;
   color:black;
   width:100%;
@@ -58,8 +58,23 @@ h2 {
   padding-top: 0;
   margin:0 auto;
   display:inline-block;
-  width: 30%;
+  width: 100%;
   text-align: center;
+  transition: 0.5s;
+}
+
+.settingBlock a {
+  transition: 0.3s;
+}
+
+.distanceButton {
+  border:none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.distanceButton:hover {
+  color:grey;
 }
 
 .starButton {
