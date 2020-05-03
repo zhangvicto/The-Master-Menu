@@ -4,6 +4,10 @@ html, body {
     height:auto;
 }
 
+logo {
+  float:right;
+}
+
 h1 {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
