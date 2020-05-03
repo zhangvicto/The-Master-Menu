@@ -7,9 +7,10 @@ also putting images in the button*/
 .input-container {
   display: flex;
   width: 20%;
-  margin-left: 30%;
-  margin-bottom: 10px;
-  
+  margin:auto;
+  margin-bottom: 0;
+  padding:10px;
+  border:0px;
 }
 
 /* Style the form icons */
@@ -17,8 +18,8 @@ also putting images in the button*/
   padding: 10px;
   background: dodgerblue;
   color: white;
-  min-width: 50px;
-  margin-left: 10%;
+  min-width: 10px;
+  width:100%;
 
 }
 
@@ -28,6 +29,8 @@ also putting images in the button*/
   width: 100%;
   padding: 10px;
   outline: none;
+  border:0;
+  width:100%;
 }
 
 .input-field:focus {
@@ -43,7 +46,7 @@ also putting images in the button*/
   cursor: pointer;
   width: 10%;
   opacity: 0.9;
-  margin-left: 20%;
+  margin:0;
 }
 
 .btn:hover {
