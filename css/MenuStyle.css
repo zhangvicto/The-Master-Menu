@@ -62,11 +62,16 @@ p {
 }
 
 #custom {
-    background-color: grey;
+    background-color: white;
+    color:black;
 }
 
 #cart {
-    background-color: grey;
+    background-color: white;
+    color:black;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
 }
 
 .menu {
@@ -91,8 +96,6 @@ p {
 
 }
 
-    
-
 .Row {
     display: table;
     width: 100%;
@@ -108,5 +111,21 @@ p {
 
 }
 
+.pics {
+    width: 30%;
+    height:auto;
+    object-fit: contain;
+    display:inline-block;
+}
 
+.icon1 {
+    position: relative;
+    float: left;
+}
 
+.button1 {
+    float:right;
+    margin:10px;border:none;
+    background-color: white;
+    font-family: 'Open Sans',sans-serif;
+}
