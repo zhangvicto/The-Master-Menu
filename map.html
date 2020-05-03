@@ -52,9 +52,32 @@
         <!-- api key: AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ-->
 
         <!-- google maps -->
-        
-        
         <div id="map" class="center"></div>
+
+        <!-- map settings-->
+        <div id="settings" class="mapSettings">
+            Preferences!
+            <!-- adjust distance from location input -->
+
+            <div class="slidecontainer" style="width:20%">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <p>Value: <span id="minDistance"></span></p>
+            </div>
+
+            <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("minDistance");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+
+
+        </div>
+
+    </div>
     </div>
 
     <script>
@@ -69,12 +92,13 @@
             var marker = new google.maps.Marker({ position: uluru, map: map });
         }
     </script>
-    
+
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&callback=initMap" async
         defer>
-    </script>
+        </script>
 
     </div>
-    </body>
+</body>
+
 </html>
