@@ -46,13 +46,15 @@ h2 {
   background-color: white;
   height:80%;
   width:80%;
+  font:white;
 }
 
 .mapSettings {
   position:absolute;
   bottom: 0;
   height:20%;
-  background-color: white;
+  background-color: black;
+  font:white;
   width:100%;
 }
 
@@ -104,9 +106,21 @@ h2 {
     padding: 20px;
     position:relative;
   }
-  
   .openbtn:hover {
     color: black;
+  }
+  
+  .openbtn1 {
+    font-size: 20px;
+    cursor: pointer;
+    color:black;
+    border: none;
+    background-color:transparent;
+    padding: 20px;
+    position:relative;
+  }
+  .openbtn1:hover {
+    color: grey;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
