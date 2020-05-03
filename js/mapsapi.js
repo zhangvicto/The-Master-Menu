@@ -1,5 +1,5 @@
 
-let zoomLevel =17;
+let zoomLevel =14;
 geocode();
 //call geocode and initalize map
 function geocode() {
@@ -18,7 +18,7 @@ function geocode() {
             window.lng = lng;
         })
         .then(
-            //map
+        //map
         // Initialize and add the map
         function initMap() {
             // The address location
@@ -30,6 +30,9 @@ function geocode() {
                 document.getElementById('map'), { zoom: zoomLevel, center: addressLocation, zoomControl: false });
             // The marker, positioned at address location
             var marker = new google.maps.Marker({ position: addressLocation, map: map });
+            var restaurant1 = new google.maps.Marker({position:{lat: 43.608210,lng:-79.650220} ,map:map});
+            var restaurant2 = new google.maps.Marker({position:{lat:43.667990,lng:-79.369960},map:map});
+
         })
 };
 
