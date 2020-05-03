@@ -1,0 +1,101 @@
+/*Bugs: 
+- The vegetarian, gevan, etc symbols aren't showing up
+- How to float the right and left side to be in line 
+
+*/
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#container {
+   background-color: grey;
+}
+
+#rightside {
+    background-color: grey;
+    float: right;
+    
+}
+
+.menu {
+    background-color: grey;
+}
+
+#leftside {
+    background-color: grey;
+    float: left;
+    padding-right: 100px;
+    padding-left: 50px;
+    height: 100%;
+}
+
+
+#cal {
+    float: left;
+
+}
+
+#budget {
+    float: right;
+
+}
+
+#custom {
+    background-color: grey;
+}
+
+#cart {
+    background-color: grey;
+}
+
+#refresh {
+    size: 100px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-left: 135px;
+
+}
+
+
+#salad {
+    background-color: #ccddcc;
+
+}
+
+#veganBurger {
+
+}
+
+#veggieBurger {
+    
+
+}
+
+#chickenBurger {
+    background-color: #ccddcc;
+
+}
+
+#wrap {
+    background-color: #ccddcc;
+
+}
+
+#fries {
+
+
+}
+
+#chickenStrips {
+    background-color: #ccddcc;
+
+}
