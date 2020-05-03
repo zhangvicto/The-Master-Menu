@@ -35,6 +35,16 @@ h2 {
   width:90%;
 }
 
+.maps {
+  background-color: white;
+  height:100%;
+  width:80%;
+}
+
+.mapSettings {
+  position:absolute;
+}
+
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
