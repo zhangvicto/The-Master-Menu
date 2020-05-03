@@ -123,9 +123,32 @@ p {
     float: left;
 }
 
+.icons {
+    padding:20px;
+}
+
 .button1 {
     float:right;
-    margin:10px;border:none;
+    margin:20px;border:none;
     background-color: white;
     font-family: 'Open Sans',sans-serif;
+    border-radius: 99px;
+    padding:10px;
+}
+
+.button1:hover {
+    color:white;
+    background-color: green;
+}
+
+.card {
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    float:right;
+}
+
+.descriptor {
+    padding:20px;
+    height:100%;
 }
