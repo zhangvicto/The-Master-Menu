@@ -49,7 +49,7 @@
         <button class="openbtn" onclick="openNav()">&#9776;</button>
 
         <!-- api key: AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ-->
-        <div>
+        <div style="height:400px;width:100%;">
 
             <h1><a href="./index.html" style="color:white;text-decoration:none;">MasterMenu</a></h1>
 
@@ -130,21 +130,21 @@
             }
         </script>
 
-        <script>
-            var map;
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 8
-                });
-            }
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
         </script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&libraries=places&callback=initAutocomplete"
-            async defer></script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&callback=initMap">
-        </script>
+        <script type="text/javascript" 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&libraries=places&callback=initAutocomplete&initMap"
+        async defer></script>
 
     </div>
 
