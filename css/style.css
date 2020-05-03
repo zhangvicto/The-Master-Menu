@@ -16,35 +16,39 @@ h2 {
 }
 
 .content {
+  position:relative;
     box-shadow:inset 0 0 10px #000000;
     background-image:url("../img/darked1.jpg");
     background-size:cover;
+    background-position: center;
     height:auto;
     height:100%;
-    top:0;
-    bottom:0;
+    margin:0,auto;
 }
 
-.container1 {
+.center {
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:90%;
+}
+
+.maps {
+  background-color: white;
+  height:80%;
+  width:80%;
+}
+
+.mapSettings {
   position:absolute;
-  margin:0;
-  top:50%;
+  bottom: 0;
+  height:20%;
+  background-color: white;
+  width:100%;
 }
-
-/* for the overlay on content when menu is activated */
-#overlay {
-    position: static;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
 
 /* The sidebar menu */
 .sidebar {
@@ -91,16 +95,17 @@ h2 {
     color: white;
     border: none;
     background-color:transparent;
+    padding: 20px;
+    position:relative;
   }
   
   .openbtn:hover {
-    color: #444;
+    color: black;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -109,3 +114,38 @@ h2 {
     .sidebar a {font-size: 18px;}
   }
 
+/* slider */
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
