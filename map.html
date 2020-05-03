@@ -5,13 +5,15 @@
     <title>MasterMenu</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="icon" href="./img/icon.png" type="image/icon type">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/placesapi.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@700&display=swap"
         rel="stylesheet">
     <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&callback=initMap" defer async>
-    </script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&callback=initMap" defer
+        async>
+        </script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/mapsapi.js"></script>
 </head>
@@ -20,8 +22,8 @@
 <script>
     /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
     function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
     }
 
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -87,14 +89,36 @@
         <div id="settings" class="mapSettings" style="font-family:'Open Sans',sans-serif">
             <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
 
-            <!-- adjust distance from location input -->
-            <div>
-                <p>Distance</p>
-                <div class="slidecontainer" style="width:20%">
-                    <input type="range" min="2" max="60" value="50" class="slider" id="myRange">
-                    <span id="distance"></span>km
+            <div class="blockContainer">
+                <!-- distance -->
+                <div class="settingBlock">
+                    <p>Distance</p>
+                    <form>
+                        <button type="button">
+                        Low
+                        </button>
+
+                        <button type="button">
+                        Mid
+                        </button>
+
+                        <button type="button">
+                        High
+                        </button>
+                    </form>
                 </div>
+
+                <div class="settingBlock">
+                    <p>Price</p>
+                    <div class="slidecontainer" style="width:20%">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+                        <span id="distance"></span>
+                    </div>
+                </div>
+
             </div>
+
+
 
             <script>
                 var slider = document.getElementById("myRange");

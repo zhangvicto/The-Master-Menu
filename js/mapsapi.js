@@ -1,5 +1,7 @@
-//call geocode
+
+let zoomLevel =17;
 geocode();
+//call geocode and initalize map
 function geocode() {
     axios.get('https://maps.googleapis.com/maps/api/geocode/json?', {
         params: {
@@ -21,9 +23,11 @@ function geocode() {
         function initMap() {
             // The address location
             var addressLocation = { lat: this.lat, lng: this.lng }; //need to convert the stuff into this lat and lng
+
+
             // The map, centered at addressLocation
             var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 14, center: addressLocation });
+                document.getElementById('map'), { zoom: zoomLevel, center: addressLocation, zoomControl: false });
             // The marker, positioned at address location
             var marker = new google.maps.Marker({ position: addressLocation, map: map });
         })
