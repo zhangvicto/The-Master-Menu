@@ -2,7 +2,7 @@ html, body {
     margin:0;
     background-color:black;
     height:auto;
-    overflow: hidden;
+    overflow:auto;
 }
 
 h1 {
