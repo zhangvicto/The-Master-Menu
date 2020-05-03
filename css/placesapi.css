@@ -3,6 +3,7 @@
 #map {
     height:400px;
     height: 100%;
+    position: relative;
 }
 /* Optional: Makes the sample page fill the window. */
  html, body {
@@ -27,5 +28,6 @@
     border-radius: 20px;
     padding:20px;
     border: 0;
+    font:30px;
 }
 

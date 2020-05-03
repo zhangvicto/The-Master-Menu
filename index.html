@@ -49,7 +49,7 @@
         <button class="openbtn" onclick="openNav()">&#9776;</button>
 
         <!-- api key: AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ-->
-        <div>
+        <div class="center">
 
             <h1><a href="./index.html" style="color:white;text-decoration:none;">MasterMenu</a></h1>
 
@@ -60,11 +60,23 @@
                     type="text" />
 
             </div>
-            <!-- google maps -->
-            <div id="map"></div>
 
+
+            <!-- google maps -->
+
+
+            <style>
+                /* Set the size of the div element that contains the map */
+                #map {
+                    /* The height is 400 pixels */
+                    width: 100%;
+                    /* The width is the width of the web page */
+                }
+            </style>
+            <div id="map" styl></div>
 
         </div>
+
         <script>
 
             var placeSearch, autocomplete;
@@ -129,22 +141,22 @@
                 }
             }
         </script>
-
-<script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      var uluru = {lat: -25.344, lng: 131.036};
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 4, center: uluru});
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({position: uluru, map: map});
-    }
+       
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = { lat: -25.344, lng: 131.036 };
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 4, center: uluru });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({ position: uluru, map: map });
+            }
         </script>
-        <script type="text/javascript" 
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&libraries=places&callback=initAutocomplete&initMap"
-        async defer></script>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ&libraries=places&callback=initAutocomplete&initMap"
+            async defer></script>
 
     </div>
 
