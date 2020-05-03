@@ -5,7 +5,9 @@ html, body {
 }
 
 logo {
-  float:right;
+  float:inline-end;
+  top: 50%;
+  display:inline-block;
 }
 
 h1 {
