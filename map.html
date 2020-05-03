@@ -91,18 +91,18 @@
             /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
             function openSet() {
                 document.getElementById("settings").style.height = "45%";
-                //document.getElementById("main").style.marginBottom = "200px";
+                document.getElementById("map").style.height = "60%";
             }
         
             /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
             function closeSet() {
                 document.getElementById("settings").style.height = "20px";
-                document.getElementById("maps").style.height = "90%";
+                document.getElementById("map").style.height = "100%";
             }
         </script>
 
         <div id="settings" class="mapSettings" style="font-family:'Open Sans',sans-serif">
-            <button onclick="openSet()">
+            <button onclick="openSet()" class="openbtn1">
                 <h2 style="text-align: left;margin:0;font-family: 'Quicksand', sans-serif;;">Preferences</h2>
             </button>
             <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">&times;</a>
