@@ -30,140 +30,183 @@
         <a href="#">Contact</a>
     </div>
       
-    <div class="header" id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div><h1>MasterMenu</h1></div>
+    <div class="header" id="main" >
+        <div style="width:100%;overflow:auto;"> 
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="index.html"><img src="./img/logo.png" width="200px" height="auto" align="right" style="padding:20px"></a>
+        </div>
+        <div><h1>Harvey's</h1></div>
         
     </div> 
     <!-- Menu Page Starts -->
     
     <div id="container"> 
 
-        <div style = "position: fixed;width:40%;" id = "leftside"> 
+        <div style = "position: relative;width: 35%;" id = "leftside"> 
             <div id = "custom">
-                <h1> Customization </h1>
+                <h1 style = "width:100%;"> Customization </h1>
                 <div> 
                     <h3> Likes: </h3>
-                    <input size=50px id="likes"> </input>
+                    <input style = "width:100%;" id="likes"> </input>                    
                 </div>
                 <div>
                     <h3> Disikes: </h3>
-                    <input size=50px id="dislikes" > </input> 
+                    <input style = "width:100%;" id="dislikes" > </input> 
                 </div>
                 <div> 
                     <div id="cal" style = "width:50%;"> 
                         <h3> Calorie Limit: </h3>
-                        <input id="likes"> </input>     
+                        <input style = "width:60%"> </input>     
                     </div>
                     <div id="budget" style = "width:50%;"> 
                         <h3> Budget: </h3>
-                        <input id="likes"> </input>
+                        <input style = "width:60%"> </input>
                     </div>
                     
                 </div>
-                <button id="refresh" style = "width:30%;"> Refresh </button>
+                <div style = "text-align: center;" >
+                    <button id="refresh" > Refresh </button>
+                </div> 
             </div>
 
             <div id = "cart">
-                <h1 > Shopping Cart </h1>
-                <h3 > Quantity </h3>
-                <h3 > Name </h3>
-                <h3 > Price </h3>
-                <div> <p> 1  Food $20.000</p> </div>
-                <div> <p> 1  Food $20.000</p> </div>
-                <div> <p> 1  Food $20.000</p> </div>
+                <h1 style = "width:80%;"> Shopping Cart </h1>
+                <div class="Row">  
+                    <div class="Col"> <h3 > Qnty </h3> </div>
+                    <div class="Col"> <h3 > Dish </h3> </div>
+                    <div class="Col"> <h3 > Price </h3> </div>
+                </div>
 
+                <div class="Row">  
+                    <div class="Col"> <h3 > 1 </h3> </div>
+                    <div class="Col"> <h3 > Side Salad</h3> </div>
+                    <div class="Col"> <h3 > $1.99 </h3> </div>
+                </div>
 
-                <h3> Total: </h3>
-                <button> Checkout</button>
+                <div class="Row">  
+                    <div class="Col"> <h3 > 1 </h3> </div>
+                    <div class="Col"> <h3 > Regular Fries </h3> </div>
+                    <div class="Col"> <h3 > $2.49 </h3> </div>
+                </div>
+
+                <div class="Row">  
+                    <div class="Col"> <h3 > 2 </h3> </div>
+                    <div class="Col"> <h3 > Chicken Burger </h3> </div>
+                    <div class="Col"> <h3 > $2.99 </h3> </div>
+                </div>
+
+                <h3> Total: $11.46</h3>
+                <h3> Tax: $1.49 </h3>
+                <h3> Total After Tax: $12.95 </h3>
+                <div style = "text-align: center;">
+                    <button id="checkout"> Checkout</button>
+                </div> 
             </div>
 
         </div>
 
-        <div id="rightside" style= "position: relative;width:60%;">
+        <div id="rightside" style= "position: relative;width:58.25%;">
 
             <div id="salad" class="menu">
-                <div> 
+                <div style = "float:left;"> 
                     <img src="./img/salad.jpg" alt="Image of food" style="width:250px;height:250px;">
                 </div>
-                <div> 
-                    <img scr= "./img/vegetarian.png" alt="Vegetarian Icon">
-                    <img scr= "./img/vegan.png" alt="Vegan Icon">
-                    <img scr= "./img/gluten-free.png" alt="Gluten-free Icon">
+
+                <div style = "width:68%;float:right;" >  
+                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
+                    <img src="./img/vegan.png" alt="Vegan Icon" style="width:35px;height:35px;">
+                    <img src="./img/gluten-free.png" alt="Gluten-free Icon" style="width:60px;height:45px;">
                     <h3> Side Salad</h3>
                     <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
+                    <p> Price: $1.99</p> 
                     <button> Add to Cart </button>
                 </div>
 
             </div>
 
             <div id="veganBurger" class="menu">
-                <div>
+                <div style = "float:left;"> 
                     <img src="./img/veganBurger.jpg" alt="Image of food" style="width:250px;height:250px;"> 
                 </div>
-                <div> 
-                    <img scr= "./img/vegetarian.png" alt="Vegetarian Icon">
-                    <img scr= "./img/vegan.png" alt="Vegan Icon">
+                <div style = "width:68%;float:right;" >  
+                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
+                    <img src="./img/vegan.png" alt="Vegan Icon" style="width:35px;height:35px;">
                     <h3> Lightlife Plant-Based Burger</h3>
                     <p> It's a burger that cooks and tastes like traditional beef, but is 
                         made from plants. So tasty, you need to try it to believe it. </p>
-                    <button> Add to Cart </button>
+                    <p> Price: $3.99</p> 
+                    button> Add to Cart </button>
                 </div>
             </div>
             <div id="wrap" class="menu">
-                <img src="./img/wrap.jpg" alt="Image of food" style="width:250px;height:250px;">
-                <img scr= "./img/halal.png" alt="Halal Icon">
-                <img scr= "/img/gluten-free.png" alt="Gluten-free Icon">
-                <h3> Grilled Chicken Wrap</h3>
-                <p>With a flame-grilled 100% Canadian Chicken breast, topped the way you want it, 
-                    Harvey's Grilled Chicken Wrap is great for lunch or dinner.</p>
-                <button> Add to Cart </button>
+                <div style = "float:left;"> 
+                    <img src="./img/wrap.jpg" alt="Image of food" style="width:250px;height:250px;">
+                </div>
+                <div style = "width:68%;float:right;" >  
+                    <img src="./img/halal.png" alt="Halal Icon" style="width:40px;height:40px;">
+                    <img src="./img/gluten-free.png" alt="Gluten-free Icon" style="width:60px;height:45px;">
+                    <h3> Grilled Chicken Wrap</h3>
+                    <p>With a flame-grilled 100% Canadian Chicken breast, topped the way you want it, 
+                        Harvey's Grilled Chicken Wrap is great for lunch or dinner.</p>
+                        <p> Price: $3.49</p> 
+                        <button> Add to Cart </button>
+                </div>
 
             </div>
             <div id="fries" class="menu">
-                <img src= "./img/fries.jpg" alt="Image of food" style="width:250px;height:250px;">
-                <img scr= "./img/vegetarian.png" alt="Vegetarian Icon">
-                <img scr= "./img/vegan.png" alt="Vegan Icon">
-                <h3> Regular Fries </h3>
-                <p> Harvey's crispy fries made with 100% Canadian Potatoes </p>
-                <button> Add to Cart </button>
-
+                <div style = "float:left;"> 
+                    <img src= "./img/fries.jpg" alt="Image of food" style="width:250px;height:250px;">
+                </div>
+                    <div style = "width:68%;float:right;" >  
+                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
+                    <img src="./img/vegan.png" alt="Vegan Icon" style="width:35px;height:35px;">
+                    <h3> Regular Fries </h3>
+                    <p> Harvey's crispy fries made with 100% Canadian Potatoes </p>
+                    <p> Price: $2.49</p> 
+                    <button> Add to Cart </button>
+                </div>
             </div>
             <div id="chickenStrips" class="menu">
-                <img src="./img/chickenStrips.jpg" alt="Image of food" style="width:250px;height:250px;">
-                <img scr= "./img/halal.png" alt="Halal Icon">
-                <h3> ChickenStrips</h3>
-                <p> Try Harvey's juicy white meat chicken strips ruffle coated for an extra crunch, or try 
-                    it with spicy buffalo sauce. Customized your chicken strips with one of Harvey's tasty dipping sauces. </p>
-                <button> Add to Cart </button>
+                <div style = "float:left;"> 
+                    <img src="./img/chickenStrips.jpg" alt="Image of food" style="width:250px;height:250px;">
+                </div>
+                <div style = "width:68%;float:right;" >  
+                    <img src="./img/halal.png" alt="Halal Icon" style="width:40px;height:40px;">
+                    <h3> ChickenStrips</h3>
+                    <p> Try Harvey's juicy white meat chicken strips ruffle coated for an extra crunch, or try 
+                        it with spicy buffalo sauce. Customized your chicken strips with one of Harvey's tasty dipping sauces. </p>
+                        <p> Price: $1.99</p> 
+                        <button> Add to Cart </button>
+                </div>
 
             </div>
             <div id="veggieBurger" class="menu">
-                <img src="./img/veggieBurger.jpg" alt="Image of food" style="width:250px;height:250px;">
-                <img scr= "./img/vegetarian.png" alt="Vegetarian Icon">
-                <h3> Veggie Burger</h3>
-                <p> Harvey's signature veggie burger on a fresh, lightly toasted bun.</p>
-                <button> Add to Cart </button>
+                <div style = "float:left;"> 
+                    <img src="./img/veggieBurger.jpg" alt="Image of food" style="width:250px;height:250px;">
+                </div>
+                <div style = "width:68%;float:right;" >  
+                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
+                    <h3> Veggie Burger</h3>
+                    <p> Harvey's signature veggie burger on a fresh, lightly toasted bun.</p>
+                    <p> Price: $2.99</p> 
+                    <button> Add to Cart </button>
+                </div>
 
             </div>
             <div id="chickenBurger" class="menu">
-                <img src="./img/chickenBurger.jpg" alt="Image of food" style="width:250px;height:250px;">
-                <h3> Crispy Chicken Sandwich</h3>
-                <p>The fresh bun may be lightly toasted, but the Crispy Chicken's ruffled 
-                    coating will give you a tasty bite you can hear! Made with 100% Canadian Chicken.</p>
-                <button> Add to Cart </button>
-
+                <div style = "float:left;"> 
+                    <img src="./img/chickenBurger.jpg" alt="Image of food" style="width:250px;height:250px;">
+                </div>
+                <div style = "width:68%;float:right;" >  
+                    <h3> Crispy Chicken Sandwich</h3>
+                    <p>The fresh bun may be lightly toasted, but the Crispy Chicken's ruffled 
+                        coating will give you a tasty bite you can hear! Made with 100% Canadian Chicken.</p>
+                        <p> Price: $1.99</p> 
+                        <button> Add to Cart </button>
+                </div>
             </div>
-
-
-
         </div>
-
     </div>
-    
-
-
+    <script src="./js/Menu.js"></script>
     </body>
-
-
 </html>
