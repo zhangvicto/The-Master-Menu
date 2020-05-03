@@ -15,18 +15,21 @@ function geocode() {
             window.lat = lat;
             window.lng = lng;
         })
+        .then(
+            //map
+        // Initialize and add the map
+        function initMap() {
+            // The address location
+            var addressLocation = { lat: this.lat, lng: this.lng }; //need to convert the stuff into this lat and lng
+            // The map, centered at addressLocation
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 14, center: addressLocation });
+            // The marker, positioned at address location
+            var marker = new google.maps.Marker({ position: addressLocation, map: map });
+        }
+        )
 };
 
-//map
-// Initialize and add the map
-function initMap() {
-    // The address location
-    var addressLocation = { lat: this.lat, lng: this.lng }; //need to convert the stuff into this lat and lng
-    // The map, centered at addressLocation
-    var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 14, center: addressLocation });
-    // The marker, positioned at address location
-    var marker = new google.maps.Marker({ position: addressLocation, map: map });
-}
+
 
 
