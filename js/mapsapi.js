@@ -33,17 +33,29 @@ function geocode() {
             var pizzaPizza = '<div id="content">'+ 
             '<div id="siteNotice">'+
             '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Pizza Pizza</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Pizza Pizza</b> is a franchised Canadian pizza quick-service restaurant with its headquarters in Toronto, Ontario.[1] Its restaurants are mainly in the province of Ontario while others are located in Quebec, Nova Scotia, and western Canada. Franchises in western Canada are mostly run through Alberta-based subsidiary Pizza 73. It has over 500 locations, including over 150 non-traditional locations.'+
+            '<a href="menu.html">'+
+            ' =>Order Now!</a> '+
+            '</div>';
+            
+            var mcd = '<div id="content">'+ 
+            '<div id="siteNotice">'+
+            '</div>'+
             '<h1 id="firstHeading" class="firstHeading">McDonald&#39;s</h1>'+
             '<div id="bodyContent">'+
             '<p><b>McDonald&#39;s</b> is a fast food, limited service restaurant with more than 35,000 restaurants in over 100 countries. It employs more than four million people. McDonald&#39;s serves 70 million customers per day, which is greater than the population of France.'+
             '<a href="menu.html">'+
             ' =>Order Now!</a> '+
             '</div>';
-            
-            var infowindow = new google.maps.InfoWindow({
+
+            var pizzainfo = new google.maps.InfoWindow({
                 content: pizzaPizza
               });
-            
+            var mcdinfo = new google.maps.InfoWindow({
+                content: mcd
+              });
 
             var restaurant1 = new google.maps.Marker({
                 position:{lat: 43.608210,lng:-79.650220} ,
@@ -57,9 +69,12 @@ function geocode() {
                 url: "../img/mcd.png"
             },
             label:"Pizza Pizza"});
-                restaurant2.addListener('click', function() {
-                    infowindow.open(map, restaurant2);
-                  });
+            restaurant2.addListener('click', function() {
+                pizzainfo.open(map, restaurant2);
+            });
+            restaurant1.addListener('click', function() {
+                mcdinfo.open(map, restaurant2);
+              });
         })
 };
 
