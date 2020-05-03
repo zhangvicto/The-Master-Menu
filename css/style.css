@@ -54,8 +54,22 @@ h2 {
 }
 
 .settingBlock {
-  padding:10px;
+  padding:5px;
+  padding-top: 0;
+  margin:0 auto;
   display:inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+.starButton {
+  border:none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.starButton:hover {
+  color:grey;
 }
 
 /* The sidebar menu */
