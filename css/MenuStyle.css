@@ -18,6 +18,9 @@ Business Page
 
 
 */
+html {
+    background-color: white;
+}
 
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -72,6 +75,9 @@ p {
     position: sticky;
     position: -webkit-sticky;
     top:0;
+    padding-top:20px;
+    height:0;
+
 }
 
 .menu {
