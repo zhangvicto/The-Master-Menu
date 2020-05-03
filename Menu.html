@@ -40,8 +40,8 @@
             <button class="openbtn" onclick="openNav()">&#9776;</button>
             <a href="index.html"><img src="./img/logo.png" width="200px" height="auto" align ="right" style="padding:20px"></a>
         </div>
-        <div>
-            <img src="./img/harveys.png"height="100px" style="margin:auto;"><h1>Harvey's</h1>
+        <div style="text-align: center;">
+            <h1><img src="./img/harveys.png"height="150px" style="margin:auto;text-align: center;"><p style="margin:0;bottom:0;"></p>Harvey's</h1>
         </div>
         
     </div> 
@@ -54,7 +54,7 @@
 
         <div style = "position: relative; width: 35%;height:100%;background-color: white;" id = "leftside"> 
             <div id = "custom">
-                <h1 style = "width:100%;"> Customization </h1>
+                <h1 style = "width:100%;"> Preference </h1>
                 <div> 
                     <h3> Likes: </h3>
                     <input style = "width:100%;" id="likes"> </input>                    
@@ -75,7 +75,7 @@
                     
                 </div>
                 <div style = "text-align: center;" >
-                    <button id="refresh" >Refresh </button>
+                    <button class="button1" style="width:100px;float:none;background-color: green;" id="refresh" >Refresh </button>
                 </div> 
             </div>
 
@@ -109,7 +109,7 @@
                 <h3> Tax: $1.49 </h3>
                 <h3> Total After Tax: $12.95 </h3>
                 <div style = "text-align: center;">
-                    <button id="checkout">Checkout</button>
+                    <button class="button1" style="background-color: green;">Checkout</button>
                 </div> 
             </div>
 
@@ -134,29 +134,59 @@
 
              <div id="salad" class="menu">
 
-                <div class="card" style="background-image:url('./img/salad.jpg');">
+                <div class="card" style="background-image:url('./img/veganBurger.jpg');">
                     <div class="icons"> 
                         <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
                         <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
                     </div>
                     
-                    <div class="descriptor"><h3> Side Salad</h3>
-                    <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
-                    <p> Price: $1.99</p>  </div>
+                    <div class="descriptor"><h3> Lightlife Plant-Based Burger</h3>
+                    <p> It's a burger that cooks and tastes like traditional beef, but is made from plants. So tasty, you need to try it to believe it. </p>
+                    <p> Price: $3.99</p>  </div>
                     <button class="button1"> Add to Cart </button>
                 </div>
             </div>    
             
             <div id="salad" class="menu">
 
-                <div class="card" style="background-image:url('./img/salad.jpg');">
+                <div class="card" style="background-image:url('./img/wrap.jpg');">
                     <div class="icons"> 
                         <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
                         <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
                     </div>
                     
-                    <div class="descriptor"><h3> Side Salad</h3>
-                    <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
+                    <div class="descriptor"><h3> Grilled Chicken Wrap</h3>
+                    <p> With a flame-grilled 100% Canadian Chicken breast, topped the way you want it, Harvey's Grilled Chicken Wrap is great for lunch or dinner. </p>
+                    <p> Price: $3.49</p>  </div>
+                    <button class="button1"> Add to Cart </button>
+                </div>
+            </div>
+
+            <div id="salad" class="menu">
+
+                <div class="card" style="background-image:url('./img/fries.jpg');">
+                    <div class="icons"> 
+                        <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
+                        <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
+                    </div>
+                    
+                    <div class="descriptor"><h3>Regular Fries</h3>
+                    <p>Harvey's crispy fries made with 100% Canadian Potatoes.</p>
+                    <p>Price: $2.49</p>  </div>
+                    <button class="button1"> Add to Cart </button>
+                </div>
+            </div>
+
+            <div id="salad" class="menu">
+
+                <div class="card" style="background-image:url('./img/chickenStrips.jpg');">
+                    <div class="icons"> 
+                        <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
+                        <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
+                    </div>
+                    
+                    <div class="descriptor"><h3>ChickenStrips</h3>
+                    <p>Try Harvey's juicy white meat chicken strips ruffle coated for an extra crunch, or try it with spicy buffalo sauce. Customized your chicken strips with one of Harvey's tasty dipping sauces.</p>
                     <p> Price: $1.99</p>  </div>
                     <button class="button1"> Add to Cart </button>
                 </div>
@@ -164,113 +194,12 @@
 
             <div id="salad" class="menu">
 
-                <div class="card" style="background-image:url('./img/salad.jpg');">
-                    <div class="icons"> 
-                        <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
-                        <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
-                    </div>
-                    
-                    <div class="descriptor"><h3> Side Salad</h3>
-                    <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
+                <div class="card" style="background-image:url('./img/chickenburger2.jpg');">
+
+                    <div class="descriptor"><h3>Crispy Chicken Sandwich</h3>
+                    <p>The fresh bun may be lightly toasted, but the Crispy Chicken's ruffled coating will give you a tasty bite you can hear! Made with 100% Canadian Chicken.</p>
                     <p> Price: $1.99</p>  </div>
                     <button class="button1"> Add to Cart </button>
-                </div>
-            </div>
-
-            <div id="salad" class="menu">
-
-                <div class="card" style="background-image:url('./img/salad.jpg');">
-                    <div class="icons"> 
-                        <img src="./img/plant.png" alt="Vegetarian Icon" class="icon1" style="width:30px;height:auto;"> 
-                        <img src="./img/fire.png" alt="Fire Icon"  class="icon1" style="width:30px;height:auto;"> <span style="color:red; margin:auto;font-family: 'open sans',sans-serif;">Hot</span>
-                    </div>
-                    
-                    <div class="descriptor"><h3> Side Salad</h3>
-                    <p> A healthy blend of our garden fresh vegetables to compliment your mains! </p>
-                    <p> Price: $1.99</p>  </div>
-                    <button class="button1"> Add to Cart </button>
-                </div>
-            </div>
-
-            <div id="veganBurger" class="menu">
-                <div style = "float:left;"> 
-                    <img src="./img/veganBurger.jpg" alt="Image of food" class="pics"> 
-                </div>
-                <div style = "width:68%;float:right;" >  
-                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
-                    <img src="./img/vegan.png" alt="Vegan Icon" style="width:35px;height:35px;">
-                    <h3> Lightlife Plant-Based Burger</h3>
-                    <p> It's a burger that cooks and tastes like traditional beef, but is 
-                        made from plants. So tasty, you need to try it to believe it. </p>
-                    <p> Price: $3.99</p> 
-                    <button> Add to Cart </button>
-                </div>
-            </div>
-            <div id="wrap" class="menu">
-                <div style = "float:left;"> 
-                    <img src="./img/wrap.jpg" alt="Image of food" class="pics">
-                </div>
-                <div style = "width:68%;float:right;" >  
-                    <img src="./img/halal.png" alt="Halal Icon" style="width:40px;height:40px;">
-                    <img src="./img/gluten-free.png" alt="Gluten-free Icon" style="width:60px;height:45px;">
-                    <h3> Grilled Chicken Wrap</h3>
-                    <p>With a flame-grilled 100% Canadian Chicken breast, topped the way you want it, 
-                        Harvey's Grilled Chicken Wrap is great for lunch or dinner.</p>
-                        <p> Price: $3.49</p> 
-                        <button> Add to Cart </button>
-                </div>
-
-            </div>
-            <div id="fries" class="menu">
-                <div style = "float:left;"> 
-                    <img src= "./img/fries.jpg" alt="Image of food" class="pics">
-                </div>
-                    <div style = "width:68%;float:right;" >  
-                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
-                    <img src="./img/vegan.png" alt="Vegan Icon" style="width:35px;height:35px;">
-                    <h3> Regular Fries </h3>
-                    <p> Harvey's crispy fries made with 100% Canadian Potatoes </p>
-                    <p> Price: $2.49</p> 
-                    <button> Add to Cart </button>
-                </div>
-            </div>
-            <div id="chickenStrips" class="menu">
-                <div style = "float:left;"> 
-                    <img src="./img/chickenStrips.jpg" alt="Image of food" class="pics">
-                </div>
-                <div style = "width:68%;float:right;" >  
-                    <img src="./img/halal.png" alt="Halal Icon" style="width:40px;height:40px;">
-                    <h3> ChickenStrips</h3>
-                    <p> Try Harvey's juicy white meat chicken strips ruffle coated for an extra crunch, or try 
-                        it with spicy buffalo sauce. Customized your chicken strips with one of Harvey's tasty dipping sauces. </p>
-                        <p> Price: $1.99</p> 
-                        <button> Add to Cart </button>
-                </div>
-
-            </div>
-            <div id="veggieBurger" class="menu">
-                <div style = "float:left;"> 
-                    <img src="./img/veggieBurger.jpg" alt="Image of food" class="pics">
-                </div>
-                <div style = "width:68%;float:right;" >  
-                    <img src="./img/vegetarian.png" alt="Vegetarian Icon" style="width:50px;height:50px;">
-                    <h3> Veggie Burger</h3>
-                    <p> Harvey's signature veggie burger on a fresh, lightly toasted bun.</p>
-                    <p> Price: $2.99</p> 
-                    <button> Add to Cart </button>
-                </div>
-
-            </div>
-            <div id="chickenBurger" class="menu">
-                <div style = "float:left;"> 
-                    <img src="./img/chickenBurger.jpg" alt="Image of food" class="pics">
-                </div>
-                <div style = "width:68%;float:right;" >  
-                    <h3> Crispy Chicken Sandwich</h3>
-                    <p>The fresh bun may be lightly toasted, but the Crispy Chicken's ruffled 
-                        coating will give you a tasty bite you can hear! Made with 100% Canadian Chicken.</p>
-                        <p> Price: $1.99</p> 
-                        <button> Add to Cart </button>
                 </div>
             </div>
         </div>
