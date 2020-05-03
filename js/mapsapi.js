@@ -36,7 +36,7 @@ function geocode() {
             '<h1 id="firstHeading" class="firstHeading">Harveys</h1>'+
             '<div id="bodyContent">'+
             '<p><b>Harveys</b> is a fast food restaurant chain that operates in Canada, with locations in every province. It serves hamburgers, poutine, hot dogs, french fries, onion rings, and other traditional Canadian fast-food fares. The chain is owned by Recipe Unlimited (previously known as Cara Operations)'+
-            '<a href="menu2.html">'+
+            '<a href="Menu2.html">'+
             ' =>Order Now!</a> '+
             '</div>';
             
@@ -46,7 +46,7 @@ function geocode() {
             '<h1 id="firstHeading" class="firstHeading">McDonald&#39;s</h1>'+
             '<div id="bodyContent">'+
             '<p><b>McDonald&#39;s</b> is a fast food, limited service restaurant with more than 35,000 restaurants in over 100 countries. It employs more than four million people. McDonald&#39;s serves 70 million customers per day, which is greater than the population of France.'+
-            '<a href="menu2.html">'+
+            '<a href="Menu2.html">'+
             ' =>Order Now!</a> '+
             '</div>';
 
