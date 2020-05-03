@@ -61,19 +61,16 @@ function geocode() {
                 position:{lat: 43.608210,lng:-79.650220} ,
                 map:map,
                 icon:{
-                    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png"
-                },
-                label:"McDonald's"
-            });
+                    url: "../img/mcd.png"
+                }});
             var restaurant2 = new google.maps.Marker({position:{lat:43.667990,lng:-79.369960},map:map,icon:{
-                url: "../img/mcd.png"
-            },
-            label:"Pizza Pizza"});
+                url: "../img/pizza.png"
+            }});
             restaurant2.addListener('click', function() {
                 pizzainfo.open(map, restaurant2);
             });
             restaurant1.addListener('click', function() {
-                mcdinfo.open(map, restaurant2);
+                mcdinfo.open(map, restaurant1);
               });
         })
 };
