@@ -56,11 +56,6 @@
 
         <!-- get and parse input from user-->
         <script>
-            // const urlParams = new URLSearchParams(window.location.search);
-            // const myParam = urlParams.get('myParam'); //myParam is the parameter we need
-
-            // console.log(myParam);
-
             function getQueryVariable(variable) {
                 var query = window.location.search.substring(1);
                 var vars = query.split('&');
@@ -73,8 +68,8 @@
                 console.log('Query variable %s not found', variable);
             }
             var str = getQueryVariable('userAddress');
-            var replaced = str.split('+').join(' ');
-            console.log(replaced);
+            var address = str.split('+').join(' ');
+            console.log(address);
 
         </script>
 
@@ -128,6 +123,27 @@
         defer>
         </script>
 
+    <!-- axios script -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        //call
+        geocode();
+        function geocode() {
+            axios.get('https://maps.googleapis.com/maps/api/geocode/json?',{
+                params: {
+                    address: location,
+                    key:'AIzaSyB4jOH2aIzJ2hevgJsniX-OgYWRrHscslQ'
+                }
+            })
+            .then(function(response){
+                console.log(response);
+            })
+            .catch(function(response){ 
+                console.log(error);
+            }
+            )};
+    
+    </script> 
     </div>
 </body>
 
